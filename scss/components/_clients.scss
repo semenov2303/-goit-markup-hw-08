@@ -1,0 +1,36 @@
+.clients__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  /* fill: #AFB1B8; */
+  transition: border-color 250ms var(--timing-function);
+}
+.clients__icon {
+  fill: #AFB1B8;
+  transition: 250ms var(--timing-function);
+}
+.clients__link:hover,
+.clients__link:focus  {
+  border-color: var(--color-accent);
+}
+
+.clients__link:hover > .clients__icon{
+  fill: var(--color-accent);
+}

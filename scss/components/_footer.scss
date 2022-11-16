@@ -1,0 +1,62 @@
+.footer {
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2F303A; 
+  display: flex;
+}
+.footer__item {
+  display: flex;
+  gap: 70px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.logo {
+  font-family: 'releway', sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+.footer__elements {
+  margin-bottom: 9px;
+}
+.footer__elements:nth-child(3){
+  margin-bottom: 0;
+}
+.part-studio-footer {
+  color: var(--color-white);
+}
+.link__footer {
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+}
+.link__footer:hover,
+.link__footer:focus {
+  color: var(--color-accent);
+}
+.address{
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__adress {
+  color: var(--color-white);
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+.footer__adress:hover{
+  color: var(--color-accent);
+}
+.link__footer {
+ color: rgba(255, 255, 255, 0.6);
+ font-style: normal;
+}

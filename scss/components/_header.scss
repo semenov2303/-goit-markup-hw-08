@@ -1,0 +1,92 @@
+header {
+  border-bottom: 1px solid #ececec;   
+}
+.part-web {color: var(--color-accent);}
+.part-studio {color: #000000;
+}
+.header {
+  display: flex;
+  align-items: center;
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 93px; 
+  }
+  &__menu {
+    display: flex;
+    gap: 50px;
+  }
+  &__logo {
+    font-family: 'releway', sans-serif;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
+  &__link {
+    padding: 32px 0;
+    display: block;
+    color: var(--color-title);
+    text-decoration: none;
+    font-size:  14px;
+    font-weight: 500;
+    line-height: 1.14;
+    position: relative;
+    transition: color 250ms var(--timing-function);
+  }
+  &__link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-color: var(--color-accent);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 250ms var(--timing-function);
+  }
+  &__link.current::after{
+    opacity: 1;
+  }
+  &__menu &__link.current {
+    color: var(--color-accent);
+  }
+  &__link:hover,
+  &__link:focus{
+    color: var(--color-accent);
+  }
+}
+.communication {
+  display: flex;
+  gap: 50px;
+  
+  &__link {
+  padding: 32px 0;
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--timing-function);
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__link:hover,
+  &__link:focus{
+    color: var(--color-accent);
+  }
+  &__item img{
+    margin-right: 10px;
+  }
+}
+  
+.header__menu + .communication {
+  margin-left: auto;
+}
+
