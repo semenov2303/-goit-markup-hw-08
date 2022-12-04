@@ -4,18 +4,35 @@ header {
 .part-web {color: var(--color-accent);}
 .part-studio {color: #000000;
 }
-.header {
+.header{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+
   &__nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
     gap: 93px; 
+    justify-content: space-between;
+  }
+  &__burger-menu {
+    background-color: #ffffff;
+    border: none;
+    margin-left: auto;
+
+    @media (min-width: 481px) {
+      display: none;
+    }
   }
   &__menu {
-    display: flex;
+    display: none;
     gap: 50px;
+
+    @media (min-width: 481px) {
+      display: flex;
+    }
   }
   &__logo {
     font-family: 'releway', sans-serif;
@@ -58,11 +75,20 @@ header {
   &__link:focus{
     color: var(--color-accent);
   }
-}
+ }
+
 .communication {
-  display: flex;
+  display: none;
   gap: 50px;
-  
+
+  @media (min-width: 481px) {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   &__link {
   padding: 32px 0;
   color: #757575;
@@ -72,6 +98,12 @@ header {
   display: flex;
   align-items: center;
   transition: color 250ms var(--timing-function);
+
+  @media (min-width: 481px) {
+    padding: 5px 0;
+    margin-right: 5px;
+  }
+
   }
   &__icon {
     margin-right: 10px;
@@ -81,9 +113,9 @@ header {
   &__link:focus{
     color: var(--color-accent);
   }
-  &__item img{
-    margin-right: 10px;
-  }
+  // &__item img{
+  //   margin-right: 10px;
+  // }
 }
   
 .header__menu + .communication {
